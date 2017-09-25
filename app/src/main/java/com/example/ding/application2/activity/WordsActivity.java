@@ -2,14 +2,12 @@ package com.example.ding.application2.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
+import android.widget.*;
 import com.bumptech.glide.Glide;
 import com.example.ding.application2.R;
 import com.example.ding.application2.bean.WordInfo;
@@ -30,6 +28,11 @@ public class WordsActivity extends BaseActivity implements View.OnClickListener 
     private ImageView imageViewB;
     private ImageView imageViewC;
     private ImageView imageViewD;
+
+    private ImageView check_a_success;
+    private ImageView check_b_success;
+    private ImageView check_c_success;
+    private ImageView check_d_success;
 
 
     private String[] selectArray = {"", "初中", "高中", "四级", "六级", "托福"};
@@ -52,6 +55,12 @@ public class WordsActivity extends BaseActivity implements View.OnClickListener 
         imageViewC = (ImageView) findViewById(R.id.image_c);
         imageViewD = (ImageView) findViewById(R.id.image_d);
 
+        check_a_success = (ImageView) findViewById(R.id.image_a_success);
+        check_b_success = (ImageView) findViewById(R.id.image_b_success);
+        check_c_success = (ImageView) findViewById(R.id.image_c_success);
+        check_d_success = (ImageView) findViewById(R.id.image_d_success);
+
+
         btn_notice = (Button) findViewById(R.id.btn_notice);
         btn_pass = (Button) findViewById(R.id.btn_pass);
 
@@ -62,6 +71,10 @@ public class WordsActivity extends BaseActivity implements View.OnClickListener 
 
         btn_pass.setOnClickListener(this);
         btn_notice.setOnClickListener(this);
+        imageViewA.setOnClickListener(this);
+        imageViewB.setOnClickListener(this);
+        imageViewC.setOnClickListener(this);
+        imageViewD.setOnClickListener(this);
 
         setData(select);
     }
@@ -75,9 +88,90 @@ public class WordsActivity extends BaseActivity implements View.OnClickListener 
                 break;
             case R.id.btn_pass:
                 wordIndex++;
+                hideAllCheckImage();
                 setWord();
                 break;
+            case R.id.image_a:
+                checkAnswer("A");
+                break;
+            case R.id.image_b:
+                checkAnswer("B");
+                break;
+            case R.id.image_c:
+                checkAnswer("C");
+                break;
+            case R.id.image_d:
+                checkAnswer("D");
+                break;
         }
+    }
+
+    private void checkAnswer(String answer) {
+        WordInfo info = dataList.get(wordIndex);
+        hideAllCheckImage();
+        if (answer.equals(info.getAnswer())) {
+            showSuccess(answer);
+        } else {
+            showFail(answer);
+        }
+    }
+
+    private void showSuccess(String answer) {
+        switch (answer) {
+            case "A":
+                Glide.with(this).load(R.mipmap.success).into(check_a_success);
+                check_a_success.setVisibility(View.VISIBLE);
+                break;
+            case "B":
+                Glide.with(this).load(R.mipmap.success).into(check_b_success);
+                check_b_success.setVisibility(View.VISIBLE);
+                break;
+            case "C":
+                Glide.with(this).load(R.mipmap.success).into(check_c_success);
+                check_c_success.setVisibility(View.VISIBLE);
+                break;
+            case "D":
+                Glide.with(this).load(R.mipmap.success).into(check_d_success);
+                check_d_success.setVisibility(View.VISIBLE);
+                break;
+        }
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                wordIndex++;
+                hideAllCheckImage();
+                setWord();
+            }
+        }, 1000);
+    }
+
+    private void showFail(String answer) {
+        switch (answer) {
+            case "A":
+                check_a_success.setVisibility(View.VISIBLE);
+                Glide.with(this).load(R.mipmap.failed).into(check_a_success);
+                break;
+            case "B":
+                check_b_success.setVisibility(View.VISIBLE);
+                Glide.with(this).load(R.mipmap.failed).into(check_b_success);
+                break;
+            case "C":
+                check_c_success.setVisibility(View.VISIBLE);
+                Glide.with(this).load(R.mipmap.failed).into(check_c_success);
+                break;
+            case "D":
+                check_d_success.setVisibility(View.VISIBLE);
+                Glide.with(this).load(R.mipmap.failed).into(check_d_success);
+                break;
+        }
+    }
+
+
+    private void hideAllCheckImage() {
+        check_a_success.setVisibility(View.GONE);
+        check_b_success.setVisibility(View.GONE);
+        check_c_success.setVisibility(View.GONE);
+        check_d_success.setVisibility(View.GONE);
     }
 
     private void setData(int select) {

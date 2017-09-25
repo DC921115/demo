@@ -6,7 +6,7 @@
         android:layout_height="match_parent"
         tools:context="com.example.ding.application2.activity.WordsActivity">
 
-    <LinearLayout android:layout_width="368dp"
+    <LinearLayout android:layout_width="match_parent"
                   android:background="#ececec"
                   android:orientation="vertical"
                   android:layout_height="match_parent">
@@ -66,62 +66,94 @@
                           android:layout_weight="1"
                           android:orientation="vertical"
                           android:layout_height="0dp">
-                <GridLayout android:layout_width="match_parent"
-                            android:columnCount="2"
-                            android:rowCount="2"
-                            android:layout_height="match_parent">
-                    <LinearLayout android:layout_width="wrap_content"
-                                  android:orientation="horizontal"
-                                  android:gravity="center"
-                                  android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_weight="1"
+                              android:orientation="horizontal"
+                              android:layout_height="0dp">
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:background="@color/colorWhite"
+                                    android:layout_height="wrap_content">
                         <ImageView android:layout_width="160dp"
                                    android:id="@+id/image_a"
-                                   android:background="@color/colorWhite"
+                                   android:layout_centerInParent="true"
                                    android:src="@mipmap/ic_launcher_round"
                                    android:layout_height="100dp"/>
+                        <ImageView android:layout_width="64dp"
+                                   android:src="@mipmap/success"
+                                   android:visibility="gone"
+                                   android:layout_centerInParent="true"
+                                   android:id="@+id/image_a_success"
+                                   android:layout_height="64dp"/>
 
-                    </LinearLayout>
-                    <LinearLayout android:layout_width="wrap_content"
-                                  android:orientation="horizontal"
-                                  android:gravity="center"
-                                  android:layout_height="wrap_content">
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorWhite"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content">
                         <ImageView android:layout_width="160dp"
                                    android:id="@+id/image_b"
-                                   android:background="@color/colorWhite"
+                                   android:layout_centerInParent="true"
                                    android:src="@mipmap/ic_launcher_round"
                                    android:layout_height="100dp"/>
-
-                    </LinearLayout>
-                    <LinearLayout android:layout_width="wrap_content"
-                                  android:orientation="horizontal"
-                                  android:gravity="center"
-                                  android:background="@color/colorWhite"
-                                  android:layout_marginTop="15dp"
-                                  android:layout_height="wrap_content">
+                        <ImageView android:layout_width="64dp"
+                                   android:src="@mipmap/success"
+                                   android:visibility="gone"
+                                   android:layout_centerInParent="true"
+                                   android:id="@+id/image_b_success"
+                                   android:layout_height="64dp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent"
+                              android:orientation="horizontal"
+                              android:layout_weight="1"
+                              android:layout_height="0dp">
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorWhite"
+                                    android:gravity="center"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_height="wrap_content">
                         <ImageView android:layout_width="160dp"
                                    android:id="@+id/image_c"
-                                   android:background="@color/colorWhite"
+                                   android:layout_centerInParent="true"
                                    android:src="@mipmap/ic_launcher_round"
                                    android:layout_height="100dp"/>
-                    </LinearLayout>
-                    <LinearLayout android:layout_width="wrap_content"
-                                  android:orientation="horizontal"
-                                  android:gravity="center"
-                                  android:background="@color/colorWhite"
-                                  android:layout_marginTop="15dp"
-                                  android:layout_height="wrap_content">
+                        <ImageView android:layout_width="64dp"
+                                   android:src="@mipmap/success"
+                                   android:visibility="gone"
+                                   android:layout_centerInParent="true"
+                                   android:id="@+id/image_c_success"
+                                   android:layout_height="64dp"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="0dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:background="@color/colorWhite"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_height="wrap_content">
                         <ImageView android:layout_width="160dp"
                                    android:id="@+id/image_d"
+                                   android:layout_centerInParent="true"
                                    android:src="@mipmap/ic_launcher_round"
                                    android:layout_height="100dp"/>
-                    </LinearLayout>
+                        <ImageView android:layout_width="64dp"
+                                   android:src="@mipmap/success"
+                                   android:visibility="gone"
+                                   android:layout_centerInParent="true"
+                                   android:id="@+id/image_d_success"
+                                   android:layout_height="64dp"/>
+                    </RelativeLayout>
 
-                </GridLayout>
+                </LinearLayout>
 
             </LinearLayout>
             <LinearLayout android:layout_width="match_parent"
                           android:gravity="center_vertical"
-                          android:layout_height="40dp">
+                          android:paddingLeft="40dp"
+                          android:layout_height="80dp">
                 <Button android:text="提示"
                         android:id="@+id/btn_notice"
                         android:layout_width="100dp"
