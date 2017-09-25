@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "wordName": "junior",
+      "wordNotice": "初级的",
+      "grade": "1",
+      "imageA": "http://mpic.tiankong.com/341/7d2/3417d2dd74ff362c3e4d68463c817ee4/640.jpg@360h",
+      "imageB": "http://mpic.tiankong.com/3a5/51e/3a551e034fe8d88ddf7358a2ff31f825/640.jpg@360h",
+      "imageC": "http://mpic.tiankong.com/875/532/875532af789f4213796da86a0af030e4/640.jpg@360h",
+      "imageD": "http://mpic.tiankong.com/6e2/9c6/6e29c6b9ed85287cd2cdbc09e362594b/640.jpg@360h",
+      "answer": "imageA"
+    },
+    {
+      "wordName": "junior2",
+      "wordNotice": "初级的",
+      "grade": "1",
+      "imageA": "http://mpic.tiankong.com/341/7d2/3417d2dd74ff362c3e4d68463c817ee4/640.jpg@360h",
+      "imageB": "http://mpic.tiankong.com/3a5/51e/3a551e034fe8d88ddf7358a2ff31f825/640.jpg@360h",
+      "imageC": "http://mpic.tiankong.com/875/532/875532af789f4213796da86a0af030e4/640.jpg@360h",
+      "imageD": "http://mpic.tiankong.com/6e2/9c6/6e29c6b9ed85287cd2cdbc09e362594b/640.jpg@360h",
+      "answer": "imageA"
+    },
+    {
+      "wordName": "high",
+      "wordNotice": "高的，高级的",
+      "grade": "2",
+      "imageA": "http://mpic.tiankong.com/341/7d2/3417d2dd74ff362c3e4d68463c817ee4/640.jpg@360h",
+      "imageB": "http://mpic.tiankong.com/3a5/51e/3a551e034fe8d88ddf7358a2ff31f825/640.jpg@360h",
+      "imageC": "http://mpic.tiankong.com/875/532/875532af789f4213796da86a0af030e4/640.jpg@360h",
+      "imageD": "http://mpic.tiankong.com/6e2/9c6/6e29c6b9ed85287cd2cdbc09e362594b/640.jpg@360h",
+      "answer": "imageA"
+    },
+    {
+      "wordName": "CET4",
+      "wordNotice": "英语四级",
+      "grade": "3",
+      "imageA": "http://mpic.tiankong.com/341/7d2/3417d2dd74ff362c3e4d68463c817ee4/640.jpg@360h",
+      "imageB": "http://mpic.tiankong.com/3a5/51e/3a551e034fe8d88ddf7358a2ff31f825/640.jpg@360h",
+      "imageC": "http://mpic.tiankong.com/875/532/875532af789f4213796da86a0af030e4/640.jpg@360h",
+      "imageD": "http://mpic.tiankong.com/6e2/9c6/6e29c6b9ed85287cd2cdbc09e362594b/640.jpg@360h",
+      "answer": "imageA"
+    },
+    {
+      "wordName": "CET6",
+      "wordNotice": "英语六级",
+      "grade": "4",
+      "imageA": "http://mpic.tiankong.com/341/7d2/3417d2dd74ff362c3e4d68463c817ee4/640.jpg@360h",
+      "imageB": "http://mpic.tiankong.com/3a5/51e/3a551e034fe8d88ddf7358a2ff31f825/640.jpg@360h",
+      "imageC": "http://mpic.tiankong.com/875/532/875532af789f4213796da86a0af030e4/640.jpg@360h",
+      "imageD": "http://mpic.tiankong.com/6e2/9c6/6e29c6b9ed85287cd2cdbc09e362594b/640.jpg@360h",
+      "answer": "imageA"
+    },
+    {
+      "wordName": "toefl",
+      "wordNotice": "托福英语",
+      "grade": "5",
+      "imageA": "http://mpic.tiankong.com/341/7d2/3417d2dd74ff362c3e4d68463c817ee4/640.jpg@360h",
+      "imageB": "http://mpic.tiankong.com/3a5/51e/3a551e034fe8d88ddf7358a2ff31f825/640.jpg@360h",
+      "imageC": "http://mpic.tiankong.com/875/532/875532af789f4213796da86a0af030e4/640.jpg@360h",
+      "imageD": "http://mpic.tiankong.com/6e2/9c6/6e29c6b9ed85287cd2cdbc09e362594b/640.jpg@360h",
+      "answer": "imageA"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.ding.application2.activity.SelectActivity">
+    <RelativeLayout android:layout_width="match_parent"
+                    android:background="@color/colorDark"
+                    android:layout_alignParentTop="true"
+                    android:layout_height="40dp">
+        <TextView android:layout_width="match_parent"
+                  android:gravity="center"
+                  android:text="@string/app_select"
+                  android:textColor="@color/colorWhite"
+                  android:textSize="18sp"
+                  android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_marginTop="60dp"
+                  android:padding="60dp"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:layout_height="0dp">
+            <Button android:layout_width="180dp"
+                    android:text="初中"
+                    android:id="@+id/btn_select_01"
+                    android:layout_height="48dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:layout_height="0dp">
+            <Button android:layout_width="180dp"
+                    android:text="高中"
+                    android:id="@+id/btn_select_02"
+                    android:layout_height="48dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:layout_height="0dp">
+            <Button android:layout_width="180dp"
+                    android:text="四级"
+                    android:id="@+id/btn_select_03"
+                    android:layout_height="48dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:layout_height="0dp">
+            <Button android:layout_width="180dp"
+                    android:text="六级"
+                    android:id="@+id/btn_select_04"
+                    android:layout_height="48dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_weight="1"
+                      android:gravity="center"
+                      android:layout_height="0dp">
+            <Button android:layout_width="180dp"
+                    android:text="托福"
+                    android:id="@+id/btn_select_05"
+                    android:layout_height="48dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

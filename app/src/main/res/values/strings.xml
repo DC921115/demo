@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Application2</string>
+    <string name="app_home">登陆</string>
+    <string name="app_select">词库</string>
+</resources>
